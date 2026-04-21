@@ -6,7 +6,7 @@ You can use with software like [Auto Dark Mode](https://github.com/AutoDarkMode/
 
 ## Usage
 
-Place `CdiTC.exe` to the installtion directory of CrystalDiskInfo.
+Place `CdiTC.exe` to the installation directory of CrystalDiskInfo.
 
 ### Use with theme name only
 
