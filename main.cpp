@@ -1,6 +1,7 @@
 #include "main.h"
 
 static void InitInstance() {
+	TCHAR* ptrEnd;
 	//// Init m_Ini
 	//TCHAR ini[MAX_PATH];
 
@@ -16,6 +17,7 @@ static void InitInstance() {
 	TCHAR tmp[MAX_PATH] = {};
 
 	GetModuleFileName(NULL, tmp, MAX_PATH);
+	if ((ptrEnd = _tcsrchr(tmp, '\\')) != NULL) { *ptrEnd = '\0'; }
 #ifdef _DEBUG
 	_tcscpy_s(tmp, _T("C:\\Program Files\\CrystalDiskInfo\\"));
 #endif
